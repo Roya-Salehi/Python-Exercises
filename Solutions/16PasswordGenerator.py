@@ -9,8 +9,8 @@ def main():
     def pass_gen_short_solution(lenght):
         return "".join(random.choices(string.printable[:94], k=lenght))
 
-    listOfRandomWords = ["Bumfuzzle", "Cattywampus", "Gardyloo", "Taradiddle", "Snickersnee",
-                         "Widdershins", "Collywobbles", "Gubbins", "Abibliophobia", "Bumbershoot"]
+    list_of_random_words = ["Bumfuzzle", "Cattywampus", "Gardyloo", "Taradiddle", "Snickersnee",
+                            "Widdershins", "Collywobbles", "Gubbins", "Abibliophobia", "Bumbershoot"]
 
     strenght = input(
         "Enter 's' for a strong password, or 'w' for a weak password: ").lower()
@@ -23,5 +23,5 @@ def main():
 
     else:
         def weakpass(): return "".join(random.choices(
-            listOfRandomWords, k=random.randint(1, 2)))
+            list_of_random_words, k=random.randint(1, 2)))
         print(weakpass())

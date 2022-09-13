@@ -1,11 +1,12 @@
-def SimpleSearchInList(olist, number):
+def simple_list_search(olist, number):
     olist.sort()
     for n in olist:
         if n == number:
             return True
     return False
 
-def BinarySearchInList(olist, number):
+
+def binary_list_search(olist, number):
     olist.sort()
     lenght = len(olist)
     while True:
@@ -22,5 +23,5 @@ def BinarySearchInList(olist, number):
 
 olist = list(map(int, input("Enter a list of numbers: ").strip().split()))
 number = int(input("Enter the number to search for: "))
-print(SimpleSearchInList(olist, number))
-print(BinarySearchInList(olist, number))
+print(simple_list_search(olist, number))
+print(binary_list_search(olist, number))

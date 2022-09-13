@@ -1,4 +1,3 @@
-from ast import Break
 from random import sample, shuffle
 
 
@@ -48,7 +47,7 @@ while guess != num:
         if cows == 1:
             cowexp = "cow"
         print(f"{bulls} {bullexp}, {cows} {cowexp}")
-    
+
 
 if guess == num:
     print("Congratulations! You won.")
